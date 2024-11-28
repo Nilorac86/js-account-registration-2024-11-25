@@ -71,7 +71,7 @@ button{
 }
 
 input:focus {
-    border-color: rgb(93, 135, 121);
+    border: 2px solid rgb(93, 135, 121);
     outline:none;
 }
 
@@ -82,3 +82,4 @@ input:focus.error{
 input:focus.valid{
     border-color: green;
 }
+
