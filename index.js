@@ -6,22 +6,19 @@ const inputConfirmPassword = document.querySelector("#confirm-password")
 const submitBtn = document.querySelector("button");
 
 
+submitBtn.disabled = true;
 
-//##### function click one label or inputfield ######
-
-labels.forEach ((label) => {
-    const input = label.querySelector("input");
-
-    label.addEventListener("click", () =>{
-        input.focus();
+labels.forEach((label) => {
+    const container = label.closest('.input-container');  
+    const input = container.querySelector("input");  
+    label.addEventListener("click", () => {
+        container.focus();  
+        input.focus();      
     });
+});
 
-}); 
 
-
-//######### checks value and validate password #######
-
- submitBtn.disabled = true;
+ 
 
 const checkIfInputHasValue = () => {
     const allFilled = Array.from(inputs).every(input => input.value !== "");

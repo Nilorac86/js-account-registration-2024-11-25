@@ -71,7 +71,7 @@ button{
 }
 
 input:focus {
-    border: 2px solid rgb(93, 135, 121);
+    border: 2px solid rgb(228, 239, 236);
     outline:none;
 }
 
