@@ -85,10 +85,12 @@ const registrationData = {
     password: inputPassword.value,
 };
 
-console.log(registrationData);
-alert(JSON.stringify(registrationData, null, 2));
+
+console.log(JSON.stringify(registrationData, null, 2));
+
 form.reset();
-passwordInput.classList.remove("valid");
-passwordConfirmInput.classList.remove("valid");
+
+inputPassword.classList.remove("valid");
+inputConfirmPassword.classList.remove("valid");
 });
 
